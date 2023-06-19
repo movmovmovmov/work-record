@@ -36,6 +36,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation 'junit:junit:4.13.1'
+    implementation('com.h2database:h2')
     implementation('org.springframework.boot:spring-boot-stater-data-jpa')
 
 
