@@ -12,6 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 
+
 public class Tasks {
 
     @Id
@@ -36,15 +37,12 @@ public class Tasks {
     private LocalDateTime end_date;
 
     @Builder
-    public Tasks (String title, String status, Long client_id_ref, Long user_id_ref, String author, LocalDateTime reg_date) {
+    public Tasks (String title, String status, Long client_id_ref, Long user_id_ref) {
         this.title = title;
         this.status = status;
         this.client_id_ref = client_id_ref;
         this.user_id_ref = user_id_ref;
-        this.author = author;
-
-
-
+        this.reg_date = LocalDateTime.now();
     }
 
 
